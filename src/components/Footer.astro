@@ -1,0 +1,36 @@
+---
+import CallToAction from './CallToAction.astro'
+import { Icon } from 'astro-icon/components'
+---
+
+<footer>
+  <CallToAction />
+  <section class="py-8 footer">
+    <div class="container md:flex gap-12 flex-shrink-0">
+      <div class="w-full">
+        <h4>Dr. Nicholas Schollars, PsyD & Dr. Whitney Standal Schollars, PsyD</h4>
+        <p>Contact<br>
+          Portland, OR<br>
+          <a href="https://www.oakandfernpsychotherapy.com/client-portal-api/practice-website-uploads/309414" target="_blank">Notice of Privacy Practices</a><br>
+          <a href="https://www.cms.gov/nosurprises" target="_blank">No Surprises Act</a><br>
+          You have the right to receive a Good Faith Estimate of what your services may cost.<br>
+        </p>
+      </div>
+      <div class="w-full">
+        <h4>Social Media</h4>
+        <Icon name="ion:logo-instagram"/>
+      </div>
+
+    </div>
+  </section>
+</footer>
+
+<style lang="scss" is:global>
+  .footer {
+    background-color: #00563B;
+    color: #F7F5F1;
+  }
+  a {
+    color: #F7F5F1;
+  }
+</style>

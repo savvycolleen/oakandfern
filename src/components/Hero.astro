@@ -1,0 +1,42 @@
+---
+import { Icon } from 'astro-icon/components'
+
+const { src = '/therapy.svg' } = Astro.props
+---
+
+<section class="hero 70vh mb-4">
+  <div class="container">
+    <div class="grid grid-cols-1 items-center gap-2 md:grid-cols-2">
+      <div class="flex flex-col items-center gap-8 md:items-start">
+        <h1 class="text-center text-6xl md:text-left md:text-5xl lg:text-7xl mt-1">
+          <slot>
+            <span>People make sense.</span>
+          </slot>
+        </h1>
+        <p>So should therapy.</p>
+        <div class="flex flex-col gap-3 min-[500px]:flex-row">
+          <a class="button text-white" href="#aboutus">
+            Learn More
+          </a>
+        </div>
+      </div>
+      <img class="hidden md:block" src={src} alt="two people talking in a therapy session" decoding="async" />
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  .text-gradient {
+    background: linear-gradient(315deg, #007A54 25%, #00563B);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  :global(.darkmode .text-gradient) {
+    background: linear-gradient(315deg, #C2FFEC 25%, #D5DBBF);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
