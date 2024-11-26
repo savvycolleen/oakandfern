@@ -5,7 +5,7 @@ const { src = 'whit', alt = "clinician image", title = 'Title' } = Astro.props
 ---
 
 <div class="feature flex flex-col gap-4">
-  <Image src={src} alt={alt}/>
+  <Image src={src} alt={alt} width="200px" class="rounded self-center" />
   <div class="content">
     <h3>{title}</h3>
     <p>
