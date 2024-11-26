@@ -1,10 +1,12 @@
 ---
-import { Icon } from 'astro-icon/components'
+// import { Icon } from 'astro-icon/components'
 
-const { src = '/therapy.svg' } = Astro.props
+// const { src = '../assets/img/therapy.svg' } = Astro.props
+import { Image } from 'astro:assets'
+import heroimg from "../assets/img/therapy2.svg"
 ---
 
-<section class="hero 70vh mb-4">
+<section class="hero 70vh mt-4 mb-10">
   <div class="container">
     <div class="grid grid-cols-1 items-center gap-2 md:grid-cols-2">
       <div class="flex flex-col items-center gap-8 md:items-start">
@@ -13,14 +15,14 @@ const { src = '/therapy.svg' } = Astro.props
             <span>People make sense.</span>
           </slot>
         </h1>
-        <p>So should therapy.</p>
+        <p class="italic">So should therapy.</p>
         <div class="flex flex-col gap-3 min-[500px]:flex-row">
           <a class="button text-white" href="#aboutus">
             Learn More
           </a>
         </div>
       </div>
-      <img class="hidden md:block" src={src} alt="two people talking in a therapy session" decoding="async" />
+      <Image class="hidden md:block rounded-2xl" src={heroimg} alt="two people talking in a therapy session" decoding="async" />
     </div>
   </div>
 </section>

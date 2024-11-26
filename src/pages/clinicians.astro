@@ -1,0 +1,40 @@
+---
+
+import DefaultLayout from '../layouts/DefaultLayout.astro'
+import Feature from '../components/Feature.astro'
+import whit from "../assets/img/whit.jpeg"
+---
+
+<DefaultLayout title="Oak and Fern Clinicians">
+  <section class="pt-10 pb-14 px-10 lg:px-20">
+    <h1>Our Clinicians</h1>
+    <div class="pt-10 grid grid-cols-1 gap-16 md:grid-cols-2">
+      <Feature src={whit} alt="headshot of Whitney Schollars" title="Dr. Whitney Standal Schollars, PsyD: “Dr. Whit” (she/her)">
+        <i>*New client openings in October 2024 &amp; working towards insurance paneling*</i><br><br>
+
+        I specialize in trauma. I draw upon approaches that integrate trauma-informed care, attention
+        to intersecting cultural and racial identities, and are rooted in multiple evidenced-based
+        therapeutic orientations including: EMDR, humanistic-existential, ACT, compassion-focused,
+        somatic, interpersonal, and CBT. I strive to be anti-racist and LGBTQIA+ affirming.<br><br>
+
+        Clients who express that I feel like a good “fit” for them include folks navigating single event or
+        chronic traumas (interpersonal, sexual, religious, etc.), anxiety, depression, OCD, ADHD, chronic
+        illness, chronic pain, interpersonal/relational stress, perfectionism, burnout, self-esteem/self-
+        confidence concerns, sexual health concerns, and intersecting identity stress (i.e. religious &amp;
+        queer, etc.), among other things. I have specialty experience supporting clients from religious
+        backgrounds, whether they are currently practicing in a faith tradition or not. I have received
+        feedback that as a clinician I am experienced as “warm,” “attuned,” and “approachable.” I take
+        a collaborative approach to therapy that invites your vision of healing—with a good dose of
+        humor and irreverence, too!
+      </Feature>
+      <Feature src={whit} alt="headshot of Nicholas Schollars" title="Dr. Nicholas Schollars, PsyD: “Nick” (he/him)">
+        <i>**Accepting new clients and in-network for Aetna insurance!**</i><br><br>
+
+        I provide psychotherapy using psychodynamic, cognitive-behavioral therapy, acceptance and commitment therapy, dialectical behavior therapy, and exposure and response prevention. This allows me to flexibly meet your needs and goals as a client. I work with depression, anxiety, trauma, and obsessive-compulsive disorder (OCD).<br><br>
+
+        I warmly invite you to connect with me. Let's collaborate on a journey of self-discovery and growth, empowering you to overcome challenges and embrace a more fulfilling life. Your well-being is my priority, and I'm here to provide the guidance and support you deserve. Reach out today and let's begin this transformative process together.
+      </Feature>
+    </div>
+
+  </section>
+</DefaultLayout>
