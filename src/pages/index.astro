@@ -6,7 +6,7 @@ import Hero from '../components/Hero.astro'
 
 <DefaultLayout title="Oak and Fern Psychotherapy">
   <Hero />
-  <div class=" flex place-content-center">
+  <div class="py-14 flex place-content-center">
     <div class="max-w-prose">
       <h2 class="mb-10 text-6xl">About Us</h2>
      
@@ -23,11 +23,12 @@ import Hero from '../components/Hero.astro'
 </DefaultLayout>
 
 <style lang="scss">
+  div.darkmode {
+    background-color: var(--background) ;
+  }
   div {
-    background-color: #F7F5F1;
+    background-color: var(--primary-background);
   }
-  div.darkmode{
-    background-color: #252b12;
-  }
+
 </style>
 
