@@ -1,7 +1,7 @@
 ---
 
 import DefaultLayout from '../layouts/DefaultLayout.astro'
-
+const evals = ['anxiety', 'depression', 'trauma', 'obssessive-compulsive disorder (ocd)', 'personality disorder', 'add/adhd', 'ptsd']
 
 ---
 
@@ -9,7 +9,12 @@ import DefaultLayout from '../layouts/DefaultLayout.astro'
   <section class="py-14 px-10 flex flex-col gap-8">
     <h1>Services</h1>
     <h2 class="text-2xl">Individual Psychotherapy & Psychological Testing</h2>
-    <p>Both of our clincians, Dr. Nick and Dr. Whit, offer psychotherapy and pyschological testing and evaluation.</p>
+    <p>Both of our clincians, Dr. Nick and Dr. Whit, offer psychotherapy and pyschological testing and evaluation in the following:</p>
+    <ul class="tags">
+      {evals.map((test) => (
+        <li class="tag">{test}</li>
+      ))}
+    </ul>
     <div class="flex flex-col md:flex-row gap-8">
       <div class="service-background rounded-2xl p-3">
         <h3 class="w-full pb-5">Approaches</h3>
@@ -48,5 +53,17 @@ import DefaultLayout from '../layouts/DefaultLayout.astro'
   }
   .service-background.darkmode {
     background-color: var(--background) ;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tag {
+    margin: 0.25em;
+    border-radius: .5em;
+    padding: .5em 1em;
+    font-size: 1.15em;
+    background-color: #00563B;
+    color: #F3F3F2;
   }
 </style>
