@@ -16,8 +16,24 @@ import Hero from '../components/Hero.astro'
       <p class="leading-7 pb-3">People make sense. We place high priority on the therapeutic relationship being a safe place to explore your complex experience with nuance, curiosity, and without judgement. Because, when we slow down and listen, people make sense. We look forward to potentially meeting with you and helping you see why you, too, make sense and deserve healing.</p><br>
         
         
-      <p class="leading-7">Oak and Fern psychotherapy is a husband-and-wife psychologist duo who offer individual psychotherapy in Oregon. Services are currently offered via telehealth, with intent for in-person options to be available in SW Portland area in December 2024/January 2025. 
+      <p class="leading-7">Oak and Fern psychotherapy is a husband-and-wife psychologist duo who offer individual psychotherapy in Oregon. Services are available via telehealth and in-person.
       </p>
+    </div>
+  </div>
+  <div class="py-14 px-20 md:px-24 location">
+    <h3 class="mb-8">Where to Find Us</h3>
+    <div class="location grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="p-8 md:col-span-2">
+        <p class="location-heading big">Kristin Square Office Building</p>
+        <p class="location-heading">Oak & Fern Psychotherapy, LLC</p>
+        <p class="location-heading">9500 SW Barbur Blvd, Suite #110</p>
+        <p class="location-heading">Portland, OR 97219</p>
+      </div>
+      <div class="location-info">Free, ample on-site parking for clients</div>
+      <div class="location-info">Designated waiting room reserved just for Oak & Fern clients</div>
+      <div class="location-info lg:col-span-2">Right off Barbur Blvd, the Kristin Square front parking lot connects to the building on level two, our office is on level one. You may take a stairwell at the back of the 2nd floor lobby to get to us.</div>
+      <div class="location-info">Wheelchair accessible from the level one lobby and entry.</div>
+      <div class="location-info md:col-span-2">Recommended accessible and more direct option: Drive around to the back of the building to park and enter on level one. Once in the first floor lobby, take the hallway on your right, and we are located on the right hand side.</div>
     </div>
   </div>
 </DefaultLayout>
@@ -28,6 +44,23 @@ import Hero from '../components/Hero.astro'
   }
   div {
     background-color: var(--primary-background);
+  }
+  .location {
+    background-color: #00563B;
+    color: var(--neutral-100);
+  }
+  .location-heading {
+    color: #252b12;
+  }
+  .location-info {
+    color: #252b12;
+    padding: 2rem;
+  }
+  .big {
+    line-height: 2rem;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
   }
 
 </style>
