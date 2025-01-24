@@ -21,7 +21,7 @@ import Hero from '../components/Hero.astro'
     </div>
   </div>
   <div class="py-14 px-20 md:px-24 location">
-    <h3 class="mb-8">Where to Find Us</h3>
+    <h3 class="mb-8 white">Where to Find Us</h3>
     <div class="location grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-row-2 gap-8">
       <div class="p-8 md:col-span-2 flex flex-col lg:flex-row lg:row-span-2 rounded-2xl">
         <div>
@@ -48,15 +48,11 @@ import Hero from '../components/Hero.astro'
   div {
     background-color: var(--primary-background);
   }
+
   .location {
     background-color: #00563B;
-    color: var(--neutral-100);
-  }
-  .location-heading {
-    color: #252b12;
   }
   .location-info {
-    color: #252b12;
     padding: 2rem;
   }
   .big {
@@ -64,6 +60,9 @@ import Hero from '../components/Hero.astro'
     font-size: 1.75rem;
     font-weight: bold;
     margin-bottom: .5rem;
+  }
+  .white {
+    color: #F3F3F2;
   }
 
 </style>
